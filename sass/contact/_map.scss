@@ -1,0 +1,53 @@
+.map{
+    padding-top: 100px;
+    background: var(--bg);
+    .map__content{ 
+        .map__left{
+            
+            .map__detail{
+                padding: 40px 0;
+                .map__detail--wrap{
+                    display: flex;
+                    padding-bottom: 20px;
+                    .map__icon{
+                        color: $color-primary;
+                        padding-right: 20px;
+                    }
+                    .map__info{
+                        p{
+                            margin: 0;
+                            @include styleFont($fs-5, $fw-5, var(--color), 1, 1);
+                            padding-bottom: 5px
+                        }
+                        a{
+                            @include styleFont($fs-5, $fw-4, #C2D0DA, 1, 1);
+                            
+                        }   
+                        a.map-contact{
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                        
+                    }
+                }
+
+            }
+        }
+        .map__right{
+            .map__right--wrap{
+              
+                // position: relative;
+                // &::after{
+                //     content: "";
+                //     position: absolute;
+                //     top: 0;
+                //     left: 0;
+                //     width: 100%;
+                //     height: 100%;
+                //     opacity: var(--opacity);
+                // }
+            }
+        }
+    }
+}

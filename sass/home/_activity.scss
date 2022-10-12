@@ -1,0 +1,57 @@
+.activity {
+  background-color: var(--bg);
+  .activity__content {
+    .activity__card {
+      @include styleCard($radius-2, transparent, $px-1, $py-1);
+      border: 1px solid var(--border-color);
+      margin: 20px 10px;
+      padding: 40px 35px;
+      box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
+      transition: all 0.5s;
+      @include responsive("extra-large"){
+        margin: 10px 0;
+      }
+      .activity__card--top {
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+        .activity__card--logo {
+          @include styleFont(30px, $fw-4, $color-primary, 1, 1);
+          padding: 20px;
+          background-color: $bg-light;
+          border-radius: $radius-1;
+          margin-right: 30px;
+          transition: all 0.5s;
+        }
+        .activity__card--title {
+          p {
+            @include styleFont($fs-3, $fw-4, var(--color-light-gray2), 1.5, 1);
+            margin: 0 0 2px;
+          }
+          h3 {
+            @include styleFont($fs-6, $fw-7, var(--color), 1, 1);
+            transition: all 0.5s;
+            &:hover {
+              color: $color-primary;
+            }
+            @include responsive("medium"){
+              font-size: $fs-3
+            }
+          }
+        }
+      }
+      .activity__card--bottom {
+        p {
+          @include styleFont($fs-3, $fw-4, $color-gray, 1.5, 1);
+        }
+      }
+      &:hover {
+        box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
+        .activity__card--logo {
+          background-color: $color-primary;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}

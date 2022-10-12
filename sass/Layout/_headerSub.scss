@@ -1,0 +1,28 @@
+
+@import "../landing_page/header";
+.headerSub{
+    @extend .header;
+    background-image: linear-gradient(to right, rgb(236 98 6 / 98%), rgb(5 3 0 / 83%)), url("../img/banner2.jpg") !important;
+    min-height: 350px !important;
+    position: relative;
+    .header__detail{
+        .header__detail--info{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @include styleFont($fs-5, $fw-7, $color-white, 1.3, 0);
+
+            a.active{
+                @include styleFont($fs-5, $fw-7, $color-primary, 1.3, 0);
+            }
+            i{
+                padding: 0 20px;
+            }
+            a{
+                color: $color-white ;
+            }
+        }
+    }
+   
+}

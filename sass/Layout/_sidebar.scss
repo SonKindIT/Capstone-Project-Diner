@@ -1,0 +1,31 @@
+
+.sidebar{
+    background-color: #0D1326;
+    color: #8F95A9;
+    padding: 30px 5px 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: $radius-2 0 0 $radius-2;
+    position: fixed;
+    line-height: 1.5;
+    top: 10%;
+    right: 0;
+    z-index: 1000;
+    .sidebar__next{
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgb(143, 149, 169, 0.4);
+        margin-bottom: 30px;
+    }
+    .sidebar__content{
+        transition: all 0.5s ;
+        &:hover{
+            color: #fff;
+            cursor: pointer;
+
+        }
+        p{
+            color: #8F95A9 !important;
+            font-size: 16px;
+        }
+    }
+}

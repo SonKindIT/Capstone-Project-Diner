@@ -1,0 +1,48 @@
+.footer {
+  background-color: #000;
+  .footer__content {
+    .footer__detail {
+      .footer__title {
+        h3 {
+          @include styleFont($fs-3, $fw-5, $color-white, 1.2, 1);
+          margin-bottom: 20px;
+        }
+      }
+      .footer__desc {
+        p {
+          @include styleFont($fs-1, $fw-4, #a0a0a0, 36px, 1);
+          margin: 10px 0;
+        }
+        .footer__info {
+          h4 {
+            @include styleFont($fs-1, $fw-4, $color-white, 1.2, 1);
+          }
+       
+        }
+      }
+      .footer__button {
+        span {
+          @include styleFont($fs-1, $fw-6, #a0a0a0, 28px, 1);
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        @media screen and (max-width: 640px) {
+             margin-bottom: 30px;
+  
+          }
+      }
+    }
+  }
+  .footer__copyright{
+    margin-top: 3em;
+    border-top: 1px solid #222;
+    padding-top: 20px;
+    p{
+        margin-bottom: 0;
+    }
+    span{
+        font-weight: 500;
+    }
+  }
+}

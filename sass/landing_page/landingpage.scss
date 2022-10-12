@@ -1,0 +1,31 @@
+//import theme
+@import "../Theme/darktheme";
+// import base
+@import "../Base_copy/reset";
+// import components
+@import "../Components/button";
+@import "../Components/title";
+
+// import helper
+@import "../Helper/mixin";
+@import "../Helper/variable";
+
+//import layout
+@import "../Layout/backToTop";
+@import "../Layout/footer";
+@import "../Layout/headerSub";
+@import "../Layout/sidebar";
+
+// Scss landing page
+
+@import "./about";
+@import "./activity";
+@import "./comments";
+@import "./contact";
+@import "./header";
+@import "./new";
+@import "./post";
+@import "./video";
+@import "./team";
+@import "./touch";
+@import "./find-us"

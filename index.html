@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ROBOTO FONTS  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Quicksand:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- OWL-CAROUSEL  -->
+    <link rel="stylesheet" href="./css/owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="./css/owl-carousel/owl.theme.css" />
+
+    <!-- FONT AWESOME  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- POPUP CSS  -->
+    <link rel="stylesheet" href="./css/popupVideo/magnific-popup.css" />
+
+    <!-- BOOTSTRAP 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./css/home.css" />
+    <title>Diner Restaurant</title>
+  </head>
+  <body>
+    <!-- START HEADER  -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">Diner</a>
+          <div class="d-flex wrap align-items-center">
+            <form class="d-flex ms-auto searchbox" role="search">
+              <input
+                class="form-control me-4"
+                type="search"
+                placeholder="Search here.."
+                aria-label="Search"
+              />
+              <div class="searchbtn">
+                <i class="fas fa-search"></i>
+              </div>
+            </form>
+            <div class="theme">
+              <!-- <i class="fa fa-moon"></i> -->
+              <input
+                class="container_toggle"
+                type="checkbox"
+                id="switch"
+                name="mode"
+              />
+              <label for="switch">
+                <i class="fa fa-moon dark"></i>
+                <i class="fa fa-sun light"></i>
+              </label>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            data-bs-scroll="true"
+            data-bs-backdrop="false"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close ms-auto"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <i class="fa fa-close"></i>
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./service.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./404.html">404</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./landing_page.html">Landing Page</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./codes.html">Shot Codes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./email.html">Email</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container header__bottom">
+        <div class="header__content">
+          <h1>The Only Thing We Love More Than Food Is You!</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+            vitae sit.Ea ipsum sed consequuntur illum facere.
+          </p>
+        </div>
+        <div class="header__button">
+          <button class="btn-primary">
+            <div class="btn__content">
+              <span>Read More</span><i class="fa fa-angle-right"></i>
+            </div>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER  -->
+
+    <!-- START SIDEBAR  -->
+    <div class="sidebar">
+      <div class="sidebar__next">
+        <i class="fa fa-angle-double-right"></i>
+      </div>
+      <div class="sidebar__back sidebar__content">
+        <i class="fa fa-arrow-left"></i>
+        <p>Back</p>
+      </div>
+      <div class="sidebar__download sidebar__content">
+        <i class="fa fa-download"></i>
+        <p>Download</p>
+      </div>
+      <div class="sidebar__buy sidebar__content">
+        <i class="fa fa-shopping-cart"></i>
+        <p>Buy</p>
+      </div>
+    </div>
+    <!-- END SIDEBAR  -->
+    <!-- START ABOUT  -->
+    <div class="about">
+      <div class="about__content">
+        <div class="about__top container">
+          <div class="about__left title">
+            <p>About us</p>
+            <h3>We found our creative space that is open for you.</h3>
+          </div>
+          <div class="about__right">
+            <p>
+              Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+              ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+              amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.
+              Lorem ipsum init dolor sit, amet elit. Dolor ipsum non velit,
+              culpa!Lorem ipsum init dolor sit.
+            </p>
+            <p>
+              Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+              ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+              amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </div>
+        <div class="about__bottom">
+          <div class="about__left">
+            <!-- <img src="./img/banner3.jpg" alt="" srcset="" /> -->
+          </div>
+          <div class="about__right">
+            <div class="about__title title">
+              <p>More than 3000 Restaurants</p>
+              <h3>Book a table easly at the best price</h3>
+            </div>
+            <div class="about__detail">
+              <p>
+                Vestibulum ante ipsum primis in faucibus orci luctus turpis
+                sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam
+                tesque et libero ut justo ultrices in.
+              </p>
+            </div>
+            <div class="about__evaluate">
+              <div class="about__evaluate--content">
+                <span class="fa fa-thumbs-up"></span>
+                <h3>Best Deals</h3>
+                <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+              </div>
+              <div class="about__evaluate--content">
+                <span class="fa fa-cutlery"></span>
+                <h3>Best Food</h3>
+                <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END ABOUT  -->
+
+    <!-- START NEW  -->
+    <div class="new section">
+      <div class="container new__content">
+        <div class="new__title title">
+          <p>What's New</p>
+          <h3>Popular Categories</h3>
+        </div>
+        <div class="new__detail">
+          <div class="row">
+            <div class="col-6 col-lg-4">
+              <div class="new__card">
+                <div class="new__card--img">
+                  <img src="./img_index/g1.jpg" alt="" srcset="" />
+                </div>
+                <div class="new__card--info">
+                  <h4>Vegetarian</h4>
+                  <p>$350</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4">
+              <div class="new__card">
+                <div class="new__card--img">
+                  <img src="./img_index/g2.jpg" alt="" srcset="" />
+                </div>
+                <div class="new__card--info">
+                  <h4>Drinks</h4>
+                  <p>$550</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4">
+              <div class="new__card">
+                <div class="new__card--img">
+                  <img src="./img_index/g3.jpg" alt="" srcset="" />
+                </div>
+                <div class="new__card--info">
+                  <h4>Lunch</h4>
+                  <p>$650</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4">
+              <div class="new__card">
+                <div class="new__card--img">
+                  <img src="./img_index/g4.jpg" alt="" srcset="" />
+                </div>
+                <div class="new__card--info">
+                  <h4>Bakery</h4>
+                  <p>$550</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4">
+              <div class="new__card">
+                <div class="new__card--img">
+                  <img src="./img_index/g5.jpg" alt="" srcset="" />
+                </div>
+                <div class="new__card--info">
+                  <h4>Dessert</h4>
+                  <p>$750</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4">
+              <div class="new__card">
+                <div class="new__card--img">
+                  <img src="./img_index/g6.jpg" alt="" srcset="" />
+                </div>
+                <div class="new__card--info">
+                  <h4>Pizza</h4>
+                  <p>$850</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END NEW -->
+
+    <!-- START ACTIVITY -->
+    <div class="activity section">
+      <div class="container activity__content">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="activity__card">
+              <div class="activity__card--top">
+                <div class="activity__card--logo">
+                  <span class="fa fa-users"></span>
+                </div>
+                <div class="activity__card--title">
+                  <p>01</p>
+                  <h3>Soup</h3>
+                </div>
+              </div>
+              <div class="activity__card--bottom">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                  eligendi vitae sit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="activity__card">
+              <div class="activity__card--top">
+                <div class="activity__card--logo">
+                  <span class="fa fa-shield"></span>
+                </div>
+                <div class="activity__card--title">
+                  <p>02</p>
+                  <h3>Soup</h3>
+                </div>
+              </div>
+              <div class="activity__card--bottom">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                  eligendi vitae sit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="activity__card">
+              <div class="activity__card--top">
+                <div class="activity__card--logo">
+                  <span class="fa fa-thermometer-full"></span>
+                </div>
+                <div class="activity__card--title">
+                  <p>03</p>
+                  <h3>Pizza</h3>
+                </div>
+              </div>
+              <div class="activity__card--bottom">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                  eligendi vitae sit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="activity__card">
+              <div class="activity__card--top">
+                <div class="activity__card--logo">
+                  <span
+                    class="fa fa-american-sign-language-interpreting"
+                  ></span>
+                </div>
+                <div class="activity__card--title">
+                  <p>04</p>
+                  <h3>Breakfast</h3>
+                </div>
+              </div>
+              <div class="activity__card--bottom">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                  eligendi vitae sit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="activity__card">
+              <div class="activity__card--top">
+                <div class="activity__card--logo">
+                  <span class="fa fa-paint-brush"></span>
+                </div>
+                <div class="activity__card--title">
+                  <p>05</p>
+                  <h3>Lunch</h3>
+                </div>
+              </div>
+              <div class="activity__card--bottom">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                  eligendi vitae sit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="activity__card">
+              <div class="activity__card--top">
+                <div class="activity__card--logo">
+                  <span class="fa fa-eraser"></span>
+                </div>
+                <div class="activity__card--title">
+                  <p>06</p>
+                  <h3>Dinner</h3>
+                </div>
+              </div>
+              <div class="activity__card--bottom">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                  eligendi vitae sit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END ACTIVITY  -->
+
+    <!-- START CONTACT  -->
+    <div class="contact">
+      <div class="contact__content">
+        <div class="contact__title">
+          <div class="contact__info">
+            <div class="contact__info--content">
+              <h3>Deliciousness jumping into the mouth.</h3>
+              <div class="contact__button">
+                <div class="btn-primary">
+                  <div class="btn__content">
+                    <span>Read More</span><i class="fa fa-angle-right"></i>
+                  </div>
+                </div>
+                <div class="btn-primary btn-primary--second">
+                  <div class="btn__content">
+                    <span>Contact Us</span><i class="fa fa-angle-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact__card">
+            <div class="row">
+              <div class="col-md-3 col-6">
+                <div class="contact__card--detail">
+                  <span class="fa fa-building"></span>
+                  <h1 class="counter">15,100</h1>
+                  <p>Branches</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="contact__card--detail">
+                  <span class="fa fa-cutlery"></span>
+                  <h1 class="counter">19,256</h1>
+                  <p>Food Items</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="contact__card--detail">
+                  <span class="fa fa-users"></span>
+                  <h1 class="counter">12,100</h1>
+                  <p>Chefs</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="contact__card--detail">
+                  <span class="fa fa-smile"></span>
+                  <h1 class="counter">2,560</h1>
+                  <p>Happy Customers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END CONTACT  -->
+
+    <!-- START VIDEO  -->
+    <div class="video section">
+      <div class="container">
+        <div class="video__content">
+          <div class="video__play">
+            <a
+              class="video-vimeo"
+              href="https://player.vimeo.com/video/305185528"
+            >
+              <div class="video__button">
+                <span class="fa fa-play video"> </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END VIDEO  -->
+
+    <!-- START POST  -->
+    <div class="post section">
+      <div class="post__content container">
+        <div class="post__title title">
+          <p>Lastest Posts</p>
+          <h3>Blog Posts</h3>
+        </div>
+        <div class="post__card">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="post__card--content">
+                <div class="post__card--img">
+                  <img src="./img_index/banner1.jpg" alt="" srcset="" />
+                  <div class="post__card--bottom">
+                    <div class="post__card--info">
+                      <p>Reciepe</p>
+                    </div>
+                    <div class="post__card--time">
+                      <i class="fa fa-clock"></i>
+                      <span>10 Min Cook</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__card--detail">
+                  <div class="post__card--title">
+                    <h3>The Best Cookie Recipes To Bake This Weekend</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui
+                      eligendi vitae sit.
+                    </p>
+                  </div>
+                </div>
+                <div class="post__card--footer">
+                  <div class="post__card--writer">
+                    <img src="./img_index/team1.jpg" alt="" />
+                    <span>Rashed Kabir</span>
+                  </div>
+                  <div class="post__card--button">
+                    <div class="card--button">
+                      <div class="btn__content">
+                        <span>Read More</span><i class="fa fa-angle-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="post__card--content">
+                <div class="post__card--img">
+                  <img src="./img_index/banner3.jpg" alt="" srcset="" />
+                  <div class="post__card--bottom">
+                    <div class="post__card--info">
+                      <p>Reciepe</p>
+                    </div>
+                    <div class="post__card--time">
+                      <i class="fa fa-clock"></i>
+                      <span>10 Min Cook</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__card--detail">
+                  <div class="post__card--title">
+                    <h3>The Best Cookie Recipes To Bake This Weekend</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui
+                      eligendi vitae sit.
+                    </p>
+                  </div>
+                </div>
+                <div class="post__card--footer">
+                  <div class="post__card--writer">
+                    <img src="./img_index/team2.jpg" alt="" />
+                    <span>Rashed Kabir</span>
+                  </div>
+                  <div class="post__card--button">
+                    <div class="card--button">
+                      <div class="btn__content">
+                        <span>Read More</span><i class="fa fa-angle-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="post__card--content">
+                <div class="post__card--img">
+                  <img src="./img_index/banner3.jpg" alt="" srcset="" />
+                  <div class="post__card--bottom">
+                    <div class="post__card--info">
+                      <p>Reciepe</p>
+                    </div>
+                    <div class="post__card--time">
+                      <i class="fa fa-clock"></i>
+                      <span>10 Min Cook</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__card--detail">
+                  <div class="post__card--title">
+                    <h3>The Best Cookie Recipes To Bake This Weekend</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui
+                      eligendi vitae sit.
+                    </p>
+                  </div>
+                </div>
+                <div class="post__card--footer">
+                  <div class="post__card--writer">
+                    <img src="./img_index/team3.jpg" alt="" />
+                    <span>Rashed Kabir</span>
+                  </div>
+                  <div class="post__card--button">
+                    <div class="card--button">
+                      <div class="btn__content">
+                        <span>Read More</span><i class="fa fa-angle-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END POST  -->
+
+    <!-- START TESTTIMONIALS -->
+    <div class="comments section">
+      <div class="comments__content container">
+        <div class="comments__title title">
+          <p>Testimonials</p>
+          <h3>What People Say</h3>
+        </div>
+        <div class="comments__carousel">
+          <div class="owl-carousel owl-theme">
+            <div class="comments__carousel--detail">
+              <div class="carousel__img">
+                <img src="./img_index/team1.jpg" alt="" srcset="" />
+              </div>
+              <div class="comments__detail">
+                <h4>OMG! I cannot believe. It's Awesome"</h4>
+                <p>
+                  My new site is so much faster and easier to work with than my
+                  old site. They are here to help the customers to get their
+                  success. Nemo sit eos, quod minus eius illo labore. Pellen
+                  tesque libero ut justo, ultrices in ligula.
+                </p>
+              </div>
+              <div class="comments__bottom">
+                <h3>Johnson william</h3>
+                <p>Customer</p>
+              </div>
+            </div>
+
+            <div class="comments__carousel--detail">
+              <div class="carousel__img">
+                <img src="./img_index/team2.jpg" alt="" srcset="" />
+              </div>
+              <div class="comments__detail">
+                <h4>Simply the best. Better than all the rest."</h4>
+                <p>
+                  My new site is so much faster and easier to work with than my
+                  old site. They are here to help the customers to get their
+                  success. Nemo sit eos, quod minus eius illo labore. Pellen
+                  tesque libero ut justo, ultrices in ligula.
+                </p>
+              </div>
+              <div class="comments__bottom">
+                <h3>Alexander sakura</h3>
+                <p>Customer</p>
+              </div>
+            </div>
+
+            <div class="comments__carousel--detail">
+              <div class="carousel__img">
+                <img src="./img_index/team3.jpg" alt="" srcset="" />
+              </div>
+              <div class="comments__detail">
+                <h4>Simply the best. Better than all the rest."</h4>
+                <p>
+                  My new site is so much faster and easier to work with than my
+                  old site. They are here to help the customers to get their
+                  success. Nemo sit eos, quod minus eius illo labore. Pellen
+                  tesque libero ut justo, ultrices in ligula.
+                </p>
+              </div>
+              <div class="comments__bottom">
+                <h3>John wilson</h3>
+                <p>Customer</p>
+              </div>
+            </div>
+            <div class="comments__carousel--detail">
+              <div class="carousel__img">
+                <img src="./img_index/team1.jpg" alt="placeholder image" srcset="" />
+              </div>
+              <div class="comments__detail">
+                <h4>Simply the best. Better than all the rest."</h4>
+                <p>
+                  My new site is so much faster and easier to work with than my
+                  old site. They are here to help the customers to get their
+                  success. Nemo sit eos, quod minus eius illo labore. Pellen
+                  tesque libero ut justo, ultrices in ligula.
+                </p>
+              </div>
+              <div class="comments__bottom">
+                <h3>Alexander sakura</h3>
+                <p>Customer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END TESTTIMONIALS -->
+
+    <!-- START FOOTER  -->
+    <footer class="footer section">
+      <div class="footer__content container">
+        <div class="footer__wrap row">
+          <div class="col-8 col-md-6 col-lg-4">
+            <div class="footer__detail">
+              <h3>Diner</h3>
+              <p>
+                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+                amet Semper at elit.
+              </p>
+              <div class="footer__detail--social">
+                <div class="footer__link--social">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="footer__link--social">
+                  <i class="fab fa-twitter"></i>
+                </div>
+                <div class="footer__link--social">
+                  <i class="fab fa-instagram"></i>
+                </div>
+                <div class="footer__link--social">
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-md-6 col-lg-2">
+            <div class="footer__detail--link">
+              <h3>Usefull Links</h3>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog posts</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-4 col-md-6 col-lg-2">
+            <div class="footer__detail--link">
+              <h3>More Info</h3>
+              <ul>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Vision & Values</a></li>
+                <li><a href="#">Awards</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-8 col-md-6 col-lg-4">
+            <div class="footer__detail--subcribe">
+              <h3>Subcribe to our Newsletter</h3>
+              <p>
+                Enter your email and receive the latest news, updates and
+                special offers from us.
+              </p>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id=""
+                  aria-describedby="helpId"
+                  placeholder="Your Email Address"
+                />
+              </div>
+              <button type="submit" class="btn btn-success">
+                Subcribe Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__left">
+            <p>
+              &copy; 2021 Diner. All rights reserved. Design by
+              <span>W3Layouts</span>
+            </p>
+          </div>
+          <div class="footer__right">
+            <span>Careers</span>
+            <span>Privacy Policy</span>
+            <span>Contact us</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER  -->
+
+    <!-- BACK TO TOP  -->
+    <a id="button"> ⤴</a>
+
+    <!-- JQUERY  -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.slim.js"
+      integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- COUNTER  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/counter/jquery.countup.js"></script>
+    <script>
+      $(".counter").countUp();
+    </script>
+
+    <!-- VIDEO POPUP  -->
+    <script src="./js/videopopup/jquery.magnific-popup.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".video-vimeo").magnificPopup({
+          disableOn: 700,
+          type: "iframe",
+          mainClass: "mfp-fade",
+          removalDelay: 160,
+          preloader: false,
+
+          fixedContentPos: false,
+        });
+      });
+    </script>
+
+    <!-- OWL-CAROUSEL  -->
+    <script src="./js/owl-carousel/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        pagination: true,
+        // Responsive
+        responsive: true,
+        items: 1,
+        itemsDesktop: [1199, 1],
+        itemsDesktopSmall: [980, 1],
+        itemsTablet: [768, 1],
+        itemsMobile: [479, 1],
+      });
+    </script>
+    <!--     BOOTSTRAP 5 JS  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/backToTop/backToTop.js"></script>
+    <script src="./js/darktheme/darktheme.js"></script>
+  </body>
+</html>

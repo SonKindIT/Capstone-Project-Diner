@@ -1,0 +1,151 @@
+.about {
+  padding: 50px 0 0;
+  background-color: var(--bg);
+  color: var(--color);
+  .about__content {
+    .about__top {
+      padding: 50px 0 100px;
+      display: flex;
+      @include responsive("extra-large") {
+        justify-content: space-between;
+      }
+      @include responsive("large") {
+        flex-direction: column;
+      }
+      .about__left {
+        width: 50%;
+        box-sizing: border-box;
+        max-width: 40%;
+        padding-right: 5rem;
+        @include responsive("extra-large") {
+          padding: 0;
+          font-size: 32px;
+          line-height: 40px;
+          text-transform: initial;
+        }
+        @include responsive("large") {
+          min-width: 100%;
+          margin-bottom: 24px;
+          h3 {
+            font-size: 32px;
+            line-height: 40px;
+          }
+        }
+      }
+      .about__right {
+        width: 50%;
+        padding-left: 3rem;
+        @include responsive("large") {
+          padding: 0;
+          width: 100%;
+        }
+        p {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+    }
+    .about__bottom {
+      background-color: $color-primary;
+      display: flex;
+      align-items: center;
+      @include responsive("large") {
+        flex-direction: column;
+      }
+      .about__left {
+        width: 50%;
+        background: url(../img_landing_page/banner3.jpg) no-repeat center;
+        background-size: cover;
+        min-height: 600px;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+          content: "";
+          background: rgba(0, 0, 0, 0.3);
+          position: absolute;
+          top: 0;
+          height: 100%;
+          left: 0;
+          right: 0;
+          z-index: -1;
+        }
+        @include responsive("large") {
+          width: 100%;
+          min-height: 200px;
+          &::before {
+            height: 100%;
+          }
+        }
+      }
+
+      .about__right {
+        width: 50%;
+        padding: 3rem 5rem;
+        @include responsive("extra-large") {
+          padding: 3rem;
+        }
+        @include responsive("large") {
+          width: 100%;
+        }
+        .about__title {
+          p {
+            color: $color-white;
+            @include responsive("large") {
+              color: #ffdfc9;
+            }
+          }
+          h3 {
+            padding-right: 30px;
+            @include responsive("large") {
+              font-size: 30px;
+              line-height: 40px;
+            }
+            @include responsive("small") {
+              font-size: 26px;
+              line-height: 38px;
+            }
+          }
+        }
+        .about__detail {
+          @include styleFont($fs-3, $fw-3, $color-white, 1.5, 1);
+          padding: 15px 0 25px;
+          @include responsive("small") {
+            font-size: $fs-1;
+            line-height: 30px;
+          }
+        }
+        .about__evaluate {
+          display: flex;
+          .about__evaluate--content {
+            padding-right: 30px;
+            span {
+              background-color: $color-white;
+              color: $color-primary;
+              padding: 20px;
+              font-size: 25px;
+              border-radius: $radius-1;
+              transition: all 0.5s;
+              &:hover {
+                color: $color-secondary-primary;
+                cursor: pointer;
+              }
+            }
+            h3 {
+              @include styleFont($fs-3, $fw-7, $color-black, 1, 1);
+              padding: 25px 0;
+              margin: 0;
+            }
+            p {
+              @include styleFont($fs-5, $fw-3, $color-white, 1.5, 1);
+              @include responsive("small") {
+                font-size: $fs-1;
+                line-height: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

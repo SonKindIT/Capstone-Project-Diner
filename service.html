@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ROBOTO FONTS  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Quicksand:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- OWL-CAROUSEL  -->
+    <link rel="stylesheet" href="./css/owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="./css/owl-carousel/owl.theme.css" />
+
+    <!-- FONT AWESOME  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- POPUP CSS  -->
+    <link rel="stylesheet" href="./css/popupVideo/magnific-popup.css" />
+
+    <!-- BOOTSTRAP 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./css/service.css" />
+    <title>Diner Restaurant</title>
+  </head>
+  <body>
+    <!-- START HEADER  -->
+    <header class="headerSub">
+      <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">Diner</a>
+          <div class="d-flex wrap align-items-center">
+            <form class="d-flex ms-auto searchbox" role="search">
+              <input
+                class="form-control me-4"
+                type="search"
+                placeholder="Search here.."
+                aria-label="Search"
+              />
+              <div class="searchbtn">
+                <i class="fas fa-search"></i>
+              </div>
+            </form>
+            <div class="theme">
+              <!-- <i class="fa fa-moon"></i> -->
+              <input
+                class="container_toggle"
+                type="checkbox"
+                id="switch"
+                name="mode"
+              />
+              <label for="switch">
+                <i class="fa fa-moon dark"></i>
+                <i class="fa fa-sun light"></i>
+              </label>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            data-bs-scroll="true"
+            data-bs-backdrop="false"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close ms-auto"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <i class="fa fa-close"></i>
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./service.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./404.html">404</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./landing_page.html">Landing Page</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./codes.html">Shot Codes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./email.html">Email</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container header__detail">
+        <div class="header__detail--info">
+          <span><a href="#Home" class="active">Home</a></span>
+          <i class="fa fa-angle-right"></i>
+          <span><a href="#Services" class="">Services</a></span>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER  -->
+
+    <!-- START SIDEBAR  -->
+    <div class="sidebar">
+      <div class="sidebar__next">
+        <i class="fa fa-angle-double-right"></i>
+      </div>
+      <div class="sidebar__back sidebar__content">
+        <i class="fa fa-arrow-left"></i>
+        <p>Back</p>
+      </div>
+      <div class="sidebar__download sidebar__content">
+        <i class="fa fa-download"></i>
+        <p>Download</p>
+      </div>
+      <div class="sidebar__buy sidebar__content">
+        <i class="fa fa-shopping-cart"></i>
+        <p>Buy</p>
+      </div>
+    </div>
+    <!-- END SIDEBAR  -->
+
+    <!-- START OFFER  -->
+    <div class="about section">
+      <div class="about__content container">
+        <div class="about__top container">
+          <div class="about__left title">
+            <p>Wht We Offer</p>
+            <h3>We found our creative space that is open for you.</h3>
+          </div>
+          <div class="about__right">
+            <p>
+              Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+              ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+              amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.
+              Lorem ipsum init dolor sit, amet elit. Dolor ipsum non velit,
+              culpa!Lorem ipsum init dolor sit.
+            </p>
+            <p>
+              Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+              ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+              amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OFFER  -->
+
+    <!-- START ACTIVITY -->
+    <div class="activity section">
+      <div class="container activity__content">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="activity__card">
+              <div class="activity__card--top">
+                <div class="activity__card--logo">
+                  <span class="fa fa-users"></span>
+                </div>
+                <div class="activity__card--title">
+                  <p>01</p>
+                  <h3>Soup</h3>
+                </div>
+              </div>
+              <div class="activity__card--bottom">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                  eligendi vitae sit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="activity__card">
+              <div class="activity__card--top">
+                <div class="activity__card--logo">
+                  <span class="fa fa-shield"></span>
+                </div>
+                <div class="activity__card--title">
+                  <p>02</p>
+                  <h3>Soup</h3>
+                </div>
+              </div>
+              <div class="activity__card--bottom">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                  eligendi vitae sit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="activity__card">
+              <div class="activity__card--top">
+                <div class="activity__card--logo">
+                  <span class="fa fa-thermometer-full"></span>
+                </div>
+                <div class="activity__card--title">
+                  <p>03</p>
+                  <h3>Pizza</h3>
+                </div>
+              </div>
+              <div class="activity__card--bottom">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                  eligendi vitae sit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="activity__card">
+              <div class="activity__card--top">
+                <div class="activity__card--logo">
+                  <span
+                    class="fa fa-american-sign-language-interpreting"
+                  ></span>
+                </div>
+                <div class="activity__card--title">
+                  <p>04</p>
+                  <h3>Breakfast</h3>
+                </div>
+              </div>
+              <div class="activity__card--bottom">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                  eligendi vitae sit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="activity__card">
+              <div class="activity__card--top">
+                <div class="activity__card--logo">
+                  <span class="fa fa-paint-brush"></span>
+                </div>
+                <div class="activity__card--title">
+                  <p>05</p>
+                  <h3>Lunch</h3>
+                </div>
+              </div>
+              <div class="activity__card--bottom">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                  eligendi vitae sit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-sm-12">
+            <div class="activity__card">
+              <div class="activity__card--top">
+                <div class="activity__card--logo">
+                  <span class="fa fa-eraser"></span>
+                </div>
+                <div class="activity__card--title">
+                  <p>06</p>
+                  <h3>Dinner</h3>
+                </div>
+              </div>
+              <div class="activity__card--bottom">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                  eligendi vitae sit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END ACTIVITY  -->
+
+    <!-- START CONTACT  -->
+    <div class="contact">
+      <div class="contact__content">
+        <div class="contact__title">
+          <div class="contact__info">
+            <div class="contact__info--content">
+              <h3>Deliciousness jumping into the mouth.</h3>
+              <div class="contact__button">
+                <div class="btn-primary">
+                  <div class="btn__content">
+                    <span>Read More</span><i class="fa fa-angle-right"></i>
+                  </div>
+                </div>
+                <div class="btn-primary btn-primary--second">
+                  <div class="btn__content">
+                    <span>Contact Us</span><i class="fa fa-angle-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END CONTACT  -->
+
+    <!-- START PLANS -->
+    <div class="plans section">
+      <div class="plans__content container">
+        <div class="plans__title title">
+          <p>Plans</p>
+          <h3>Our Menu</h3>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="plans__detail">
+              <div class="plans__top">
+                <p class="plans__name">Slow Cooked Egg</p>
+                <p class="plans__price">$79.50</p>
+              </div>
+              <div class="plans__bottom">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="plans__detail">
+              <div class="plans__top">
+                <p class="plans__name">Slow Cooked Egg</p>
+                <p class="plans__price">$79.50</p>
+              </div>
+              <div class="plans__bottom">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="plans__detail">
+              <div class="plans__top">
+                <p class="plans__name">Slow Cooked Egg</p>
+                <p class="plans__price">$79.50</p>
+              </div>
+              <div class="plans__bottom">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="plans__detail">
+              <div class="plans__top">
+                <p class="plans__name">Slow Cooked Egg</p>
+                <p class="plans__price">$79.50</p>
+              </div>
+              <div class="plans__bottom">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="plans__detail">
+              <div class="plans__top">
+                <p class="plans__name">Slow Cooked Egg</p>
+                <p class="plans__price">$79.50</p>
+              </div>
+              <div class="plans__bottom">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="plans__detail">
+              <div class="plans__top">
+                <p class="plans__name">Slow Cooked Egg</p>
+                <p class="plans__price">$79.50</p>
+              </div>
+              <div class="plans__bottom">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="plans__detail">
+              <div class="plans__top">
+                <p class="plans__name">Slow Cooked Egg</p>
+                <p class="plans__price">$79.50</p>
+              </div>
+              <div class="plans__bottom">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="plans__detail">
+              <div class="plans__top">
+                <p class="plans__name">Slow Cooked Egg</p>
+                <p class="plans__price">$79.50</p>
+              </div>
+              <div class="plans__bottom">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END PLANS  -->
+
+    <!-- START FOOTER  -->
+    <footer class="footer section">
+      <div class="footer__content container">
+        <div class="footer__wrap row">
+          <div class="col-8 col-md-6 col-lg-4">
+            <div class="footer__detail">
+              <h3>Diner</h3>
+              <p>
+                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+                amet Semper at elit.
+              </p>
+              <div class="footer__detail--social">
+                <div class="footer__link--social">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="footer__link--social">
+                  <i class="fab fa-twitter"></i>
+                </div>
+                <div class="footer__link--social">
+                  <i class="fab fa-instagram"></i>
+                </div>
+                <div class="footer__link--social">
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-md-6 col-lg-2">
+            <div class="footer__detail--link">
+              <h3>Usefull Links</h3>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog posts</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-4 col-md-6 col-lg-2">
+            <div class="footer__detail--link">
+              <h3>More Info</h3>
+              <ul>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Vision & Values</a></li>
+                <li><a href="#">Awards</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-8 col-md-6 col-lg-4">
+            <div class="footer__detail--subcribe">
+              <h3>Subcribe to our Newsletter</h3>
+              <p>
+                Enter your email and receive the latest news, updates and
+                special offers from us.
+              </p>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id=""
+                  aria-describedby="helpId"
+                  placeholder="Your Email Address"
+                />
+              </div>
+              <button type="submit" class="btn btn-success">
+                Subcribe Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__left">
+            <p>
+              &copy; 2021 Diner. All rights reserved. Design by
+              <span>W3Layouts</span>
+            </p>
+          </div>
+          <div class="footer__right">
+            <span>Careers</span>
+            <span>Privacy Policy</span>
+            <span>Contact us</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER  -->
+    <!-- BACK TO TOP  -->
+    <a id="button"> ⤴</a>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.slim.js"
+      integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/backToTop/backToTop.js"></script>
+    <script src="./js/darktheme/darktheme.js"></script>
+  </body>
+</html>

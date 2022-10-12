@@ -1,0 +1,124 @@
+.contact {
+  .contact__content {
+    .contact__title {
+      position: relative;
+      .contact__info {
+        background: url("../img_landing_page/banner2.jpg") no-repeat center;
+        background-size: cover;
+        text-align: center;
+        padding: 8rem 0;
+        position: relative;
+        z-index: 1;
+        @include responsive("medium"){
+          padding: 3rem 0;
+        }
+        .contact__info--content {
+          max-width: 500px;
+          margin: 0 auto;
+          h3 {
+            @include styleFont($fs-7, $fw-5, $color-white, 1, 1);
+            padding-bottom: 50px;
+          }
+          .contact__button {
+            display: flex;
+            justify-content: space-around;
+            .btn-primary {
+              transition: all 0.5s;
+            }
+            .btn-primary--second {
+              background-color: $bg-primary;
+              color: $color-white;
+              border-color: transparent;
+              &:hover {
+                opacity: 0.8;
+                .btn__content {
+                  color: $color-white;
+                }
+              }
+            }
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+        &::before {
+          content: "";
+          background: rgba(0, 0, 0, 0.5);
+          position: absolute;
+          top: 0;
+          min-height: 100%;
+          left: 0;
+          right: 0;
+          z-index: -1;
+        }
+      }
+
+      .contact__card {
+        background-color: var(--bg);
+
+        position: absolute;
+        bottom: -40%;
+        z-index: 1;
+        width: 100%;
+        padding: 0 80px;
+
+        @include responsive("large"){
+          bottom: initial;
+        }
+        @include responsive("medium"){
+          position: relative;
+          padding-bottom: 30px;
+        }
+
+        @include responsive("small"){
+          position: relative;
+          padding: 20px 0;
+          .row{
+            --bs-gutter-x:0;
+          }
+        }
+
+        .col-lg-3{
+          padding: 0 20px;
+          @include responsive("extra-large"){
+            padding: 0 10px;
+          }
+        }
+        .contact__card--detail {
+          @include styleCard($radius-2, var(--bg), 40px, 20px);
+          box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+          text-align: center;
+          transition: all 0.5s;
+          @include responsive("large"){
+            margin:20px 0;
+          }
+          @include responsive("medium"){
+            margin: 15px 0;
+          }
+          span {
+            background-color: $bg-primary;
+            font-size: 26px;
+            border-radius: 50%;
+            width: 68px;
+            height: 68px;
+            line-height: 68px;
+            color: $color-white;
+            text-align: center;
+          }
+          h1{
+            @include styleFont($fs-4, $fw-7, var(--color), 1, 1);
+            padding: 15px 0;
+          }
+          p{
+            @include styleFont($fs-5, $fw-5, var(--color-light-gray2), 1, 1);
+          }
+          &:hover{
+            transform: translateY(-0.25rem);
+            box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px, rgba(71, 63, 79, 0.16) 0px 5px 10px; 
+            transition: all 0.5s;   
+          }
+        }
+      }
+    }
+  }
+}

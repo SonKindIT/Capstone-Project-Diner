@@ -1,0 +1,64 @@
+.touch{
+  padding: 50px 0 0;
+  background-color: var(--bg);
+  color: var(--color);
+  .touch-content{
+    .post-form{
+        .row{
+            .col{
+                margin-bottom: 20px;
+                input[placeholder="Name"]{
+                    width: 100%;
+                    padding: 12px 20px;
+                    background-color: #f7f7f7 ;
+                    border: solid 1px #f7f7f7;
+                    border-radius: 2px;
+                    font-size: 18px;
+                }
+                input[placeholder="Email"]{
+                    width: 100%;
+                    padding: 12px 20px;
+                    background-color: #f7f7f7 ;
+                    border: solid 1px #f7f7f7;
+                    border-radius: 2px;
+                    font-size: 18px;
+                }
+                input[placeholder="Subject"]{
+                    width: 100%;
+                    padding: 12px 20px;
+                    background-color: #f7f7f7 ;
+                    border: solid 1px #f7f7f7;
+                    border-radius: 2px;
+                    font-size: 18px;
+                }
+            }
+
+        }
+        .message{
+            textarea{
+                width: 100%;
+                padding: 12px 20px;
+                font-size: 18px;
+                background-color: #f7f7f7 ;
+                border: solid 1px #f7f7f7;
+            }
+        }
+        .button{
+            display: flex;
+            flex-direction: row-reverse;
+            .btn-primary--second{
+                margin-top: 24px;
+                background-color: #ff6600;
+                color: #fff;
+                border-color: transparent;
+                opacity: 1;
+                transition: all 0.5s;
+                &:hover{
+                    opacity: 0.8;
+                    transition: all 0.5s;
+                }
+            }
+        } 
+    }
+  }
+}

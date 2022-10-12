@@ -1,0 +1,81 @@
+.video {
+  position: relative;
+  margin-top: 10rem;
+  background-color: var(--bg);
+  @include responsive("large"){
+    margin-top: 15rem;
+  }
+  @include responsive("medium"){
+    margin-top: 0;
+  }
+
+  .video__content {
+    background: url("../img_landing_page/banner3.jpg") no-repeat center;
+    min-height: 600px;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: $radius-2;
+    @include responsive("small"){
+      min-height: 350px;
+    }
+    .video__play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .video-vimeo {
+        width: 80px;
+        height: 80px;
+        font-size: 26px;
+        padding-left: 2px;
+        text-align: center;
+        line-height: 76px;
+        border-radius: 50%;
+        background-color: $bg-white;
+        display: inline-block;
+        animation: boxShadow 1s linear infinite;
+        transition: all 0.5s;
+        .video__button {
+          span {
+            margin: 0;
+            color: $color-primary;
+            transition: all 0.5s;
+            background-color: #fff;
+          }
+        }
+      }
+      &:hover {
+        .video-vimeo {
+          transform: scale(1.2);
+          background-color: $color-primary;
+          span {
+            color: $color-white;
+          }
+        }
+      }
+    }
+    &::before{
+      content: "";
+      background: rgba(0,0,0,0.5);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+@keyframes boxShadow {
+  0% {
+    box-shadow: 0 0 0 0 rgb(255 255 255 / 25%),
+      0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
+  }
+
+  100% {
+    box-shadow: 0 0 0 10px rgb(255 255 255 / 25%),
+      0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
+  }
+}

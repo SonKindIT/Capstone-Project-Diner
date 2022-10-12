@@ -1,0 +1,26 @@
+.plans{
+    background-color: var(--bg);
+    .plans__content{
+        .plans__title{
+            text-align: center;
+        }
+        .plans__detail{
+            margin-top: 50px;
+            padding:0 20px;
+            .plans__top{
+                display: flex;
+                justify-content: space-between;
+                @include styleFont($fs-3, $fw-6, var(--color), 1, 0);
+                border-bottom: 2px dotted #888;
+           
+                .plans__price{
+                    color: $color-primary;
+                }
+            }
+            .plans__bottom{
+                color: var(--color);
+                padding-top: 15px;
+            }
+        }
+    }
+}

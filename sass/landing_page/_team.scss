@@ -1,0 +1,135 @@
+@import "../base/base";
+@import "../themes/themes";
+@import "../Base_copy/reset";
+.s-team{
+    padding: 48px 0px;
+    background-color: var(--bg);
+    .container{
+        padding: 48px 15px;
+        .s-container{
+            h6:first-child{
+                font-size: 20px;
+                font-family: 'Pacifico',cursive;
+                color: $color-3;
+            }
+            h2{
+                line-height: 48px;
+                font-size: $txt-7;
+                margin-bottom: 24px;
+                color: var(--color);
+            }
+            .thumb{
+                flex-wrap: wrap;
+                @media screen and (min-width:992px) {
+                    .item{
+                        width: calc(100% /3) !important;
+                    }
+                }
+                @media screen and (max-width:992px) {
+                    .item{
+                        width: 50% !important;
+                    }
+                }
+                .item{
+                    padding: 0 15px;
+                    &:hover .s-menu{
+                        visibility: visible;
+                    }
+
+                    &:hover h6:nth-child(2){
+                        color: $color-3;
+                    }
+                    img{
+                        width: 100%;
+                        border-radius: 5px;
+                    }
+                    h6{
+                        margin-top: 25px;
+                        font-size: $txt-4;
+                        font-weight: $fw-semi-bold;
+                        color: var(--color);
+                    }
+                    p{
+                        font-size: 18px;
+                        font-weight: $fw-light;
+                        line-height: 28px;
+                        color: var(--color);
+                    }
+                    .s-menu{
+                        visibility: hidden;
+                        top:65%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        .s-fb{
+                            cursor: pointer;
+                            width: 42px;
+                            height: 42px;
+                            border-radius: 50%;
+                            background-color: rgba(0,0,0,0.1);
+                            margin-right: 5px;
+                            i{
+                                line-height: 42px;
+                                font-size: $txt-1;
+                                color: $color-1;
+                            }
+                        }
+
+                        .s-fb:hover{
+                            background-color:$bc-2;
+                            color: $color-3;
+                        }
+
+                        .s-fb:hover i{
+                            color: $color-3;
+                        }
+
+                        .s-twiter{
+                            cursor: pointer;
+                            width: 42px;
+                            height: 42px;
+                            border-radius: 50%;
+                            margin-right: 5px;
+                            background-color: rgba(0,0,0,0.1);
+                            i{
+                                line-height: 42px;
+                                font-size: $txt-1;
+                                color: $color-1;
+                            }
+                        }
+
+                        .s-twiter:hover{
+                            background-color:$bc-2;
+                            color: $color-3;
+                        }
+
+                        .s-twiter:hover i{
+                            color: $color-3;
+                        }
+
+                        .s-insta{
+                            cursor: pointer;
+                            width: 42px;
+                            height: 42px;
+                            border-radius: 50%;
+                            margin-right: 5px;
+                            background-color: rgba(0,0,0,0.1);
+                            i{
+                                line-height: 42px;
+                                font-size: $txt-1;
+                                color: $color-1;
+                            }
+                        }
+                        .s-insta:hover{
+                            background-color:$bc-2;
+                            color: $color-3;
+                        }
+
+                        .s-insta:hover i{
+                            color: $color-3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

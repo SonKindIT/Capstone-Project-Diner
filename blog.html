@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+   <!-- Font awesome -->
+   <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+   integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+   crossorigin="anonymous"
+   referrerpolicy="no-referrer"
+ />
+ <!-- Font  -->
+ <link href="//fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+ <link href="//fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
+ 
+ <!-- about style -->
+ <link rel="stylesheet" href="./css/blog.css">
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header class="headerSub">
+      <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">Diner</a>
+          <div class="d-flex wrap align-items-center">
+            <form class="d-flex ms-auto searchbox" role="search">
+              <input
+                class="form-control me-4"
+                type="search"
+                placeholder="Search here.."
+                aria-label="Search"
+              />
+              <div class="searchbtn">
+                <i class="fas fa-search"></i>
+              </div>
+            </form>
+            <div class="theme">
+              <!-- <i class="fa fa-moon"></i> -->
+              <input
+                class="container_toggle"
+                type="checkbox"
+                id="switch"
+                name="mode"
+              />
+              <label for="switch">
+                <i class="fa fa-moon dark"></i>
+                <i class="fa fa-sun light"></i>
+              </label>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            data-bs-scroll="true"
+            data-bs-backdrop="false"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close ms-auto"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <i class="fa fa-close"></i>
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./service.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./404.html">404</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./landing_page.html">Landing Page</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./codes.html">Shot Codes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./email.html">Email</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container header__detail">
+        <div class="header__detail--info">
+          <span><a href="#Home" class="active">Home</a></span>
+          <i class="fa fa-angle-right"></i>
+          <span><a href="#Contact" class="">BLog</a></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar">
+      <div class="sidebar__next">
+        <i class="fa fa-angle-double-right"></i>
+      </div>
+      <div class="sidebar__back sidebar__content">
+        <i class="fa fa-arrow-left"></i>
+        <p>Back</p>
+      </div>
+      <div class="sidebar__download sidebar__content">
+        <i class="fa fa-download"></i>
+        <p>Download</p>
+      </div>
+      <div class="sidebar__buy sidebar__content">
+        <i class="fa fa-shopping-cart"></i>
+        <p>Buy</p>
+      </div>
+    </div>
+
+    <!-- Start BLog Post -->
+    <section class="blog-post">
+        <div class="container">
+            <h6 class="text-center">Latest Posts</h6>
+            <h2 class="text-center">Blog Posts</h2>
+            <div class="row stt-1">
+                <div class="col-12 col-lg-8">
+                    <div class="row stt-2">
+                        <!-- item 1 -->
+                        <div class="col-12 col-md-6 item">
+                            <div class="img position-relative">
+                                <img src="./img_blog/g1.jpg" alt="">
+                                <div class="overlay">
+                                    <p class="d-flex align-item-center"><span>Reciepe</span><i class="fa fa-clock-o mr-2" aria-hidden="true"></i> <span>10 Min Cook</span></p>
+                                </div>
+                            </div>
+                            
+                            <a>The Best Cookie Recipes To Bake This Weekend</a>
+                            <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                            <div class="content-item d-flex justify-content-between">
+                                <a href=""><img src="./img_blog/team3.jpg" alt="">Rashed Kabir</a>
+                                <a href="">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                           
+                        </div>
+
+                        <!-- item2 -->
+                        <div class="col-12 col-md-6 item">
+                            <div class="img position-relative">
+                                <img src="./img_blog/g2.jpg" alt="">
+                                <div class="overlay">
+                                    <p class="d-flex align-item-center"><span>Soup</span><i class="fa fa-clock-o mr-2" aria-hidden="true"></i> <span>10 Min Cook</span></p>
+                                </div>
+                            </div>
+                     
+                            <a>The Best Cookie Recipes To Bake This Weekend</a>
+                            <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                            <div class="content-item d-flex justify-content-between">
+                                <a href=""><img src="./img_blog/team1.jpg" alt="">Jannatul Ferdous
+                                </a>
+                                <a href="">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                          
+                        </div>
+
+                        <!-- item 3 -->
+
+                        <div class="col-12 col-md-6 item">
+                            <div class="img position-relative">
+                                <img src="./img_blog/g3.jpg" alt="">
+                                <div class="overlay">
+                                    <p class="d-flex align-item-center"><span>Lunch</span><i class="fa fa-clock-o mr-2" aria-hidden="true"></i> <span>15 Min Cook</span></p>
+                                </div>
+                            </div>
+                      
+                            <a>The Best Cookie Recipes To Bake This Weekend</a>
+                            <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                            <div class="content-item d-flex justify-content-between">
+                                <a href=""><img src="./img_blog/team2.jpg" alt="">Rashed Kabir</a>
+                                <a href="">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                            
+                        </div>
+
+                        <!-- item 4 -->
+                        <div class="col-12 col-md-6 item">
+                            <div class="img position-relative">
+                                <img src="./img_blog/g4.jpg" alt="">
+                                <div class="overlay">
+                                    <p class="d-flex align-item-center"><span>Diner</span><i class="fa fa-clock-o mr-2" aria-hidden="true"></i> <span>15 Min Cook</span></p>
+                                </div>
+                            </div>
+ 
+                            <a>The Best Cookie Recipes To Bake This Weekend</a>
+                            <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                            <div class="content-item d-flex justify-content-between">
+                                <a href=""><img src="./img_blog/team3.jpg" alt="">Rashed Kabir</a>
+                                <a href="">Read More<i class="fa fa-angle-right"></i></a>
+                            </div>
+                           
+                        </div>
+
+                        <!-- item5 -->
+
+                        <div class="col-12 col-md-6 item">
+                            <div class="img position-relative">
+                                <img src="./img_blog/g5.jpg" alt="">
+                                <div class="overlay">
+                                    <p class="d-flex align-item-center"><span>Soup</span><i class="fa fa-clock-o mr-2" aria-hidden="true"></i> <span>15 Min Cook</span></p>
+                                </div>
+                            </div>
+                            <a>The Best Cookie Recipes To Bake This Weekend</a>
+                            <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                            <div class="content-item d-flex justify-content-between">
+                                <a href=""><img src="./img_blog/team1.jpg" alt="">Rashed Kabir</a>
+                                <a href="">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- item 6 -->
+
+                        <div class="col-12 col-md-6 item">
+                            <div class="img position-relative">
+                                <img src="./img_blog/g6.jpg" alt="">
+                                <div class="overlay">
+                                    <p class="d-flex align-item-center"><span>Drinks</span><i class="fa fa-clock-o mr-2" aria-hidden="true"></i> <span>15 Min Cook</span></p>
+                                </div>
+                            </div>
+                            <a>The Best Cookie Recipes To Bake This Weekend</a>
+                            <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                            <div class="content-item d-flex justify-content-between">
+                                <a href=""><img src="./img_blog/team2.jpg" alt="">Rashed Kabir</a>
+                                <a href="">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center menu-nav pt-3 mt-5">
+                            <button class="button button1">1</button>
+                            <button class="button">2</button>
+                            <button class="button">3</button>
+                            <button class="button btn-next">Next <i class="fa fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="recipes">
+                        <div class="row">
+                            <h3>Latest recipes</h3>
+                            <!-- item1 -->
+                            <div class="col-6 recipes-item">
+                                <img src="./img_blog/banner1.jpg" alt="">
+                                <h4>How to make capuccino</h4>
+                            </div>
+
+                            <!-- item2 -->
+                            <div class="col-6 recipes-item">
+                                <img src="./img_blog/banner2.jpg" alt="">
+                                <h4>Starbucks blond coffee</h4>
+                            </div>
+
+                            <!-- item 3 -->
+                            <div class="col-6 recipes-item">
+                                <img src="./img_blog/banner3.jpg" alt="">
+                                <h4>The best Cookie recipes to bake</h4>
+                            </div>
+
+                            <!-- item4 -->
+                            <div class="col-6 recipes-item">
+                                <img src="./img_blog/banner4.jpg" alt="">
+                                <h4>How to make capuccino</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending">
+                        <h3>Trending posts</h3>
+                        <!-- item 1 -->
+                        <div class="trend-item d-flex">
+                            <img src="./img_blog/g3.jpg" alt="">
+                            <div>
+                                <h6>12 Curry Recipes You'll Ever Need</h6>
+                                <p>Feb 4, 2021</p>
+                            </div>
+                        </div>
+
+                        <!-- item 2 -->
+                        <div class="trend-item d-flex">
+                            <img src="./img_blog/g3.jpg" alt="">
+                            <div>
+                                <h6>Sweet Strawberry Dink for Summer</h6>
+                                <p>Feb 5, 2021</p>
+                            </div>
+                        </div>
+
+                        <!-- item 3 -->
+                        <div class="trend-item d-flex">
+                            <img src="./img_blog/g6.jpg" alt="">
+                            <div>
+                                <h6>How to make easiest pancakes ever</h6>
+                                <p>Feb 6, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categories">
+                        <h4>Categories</h4>
+                        <li><a href="" class="cate-item">Desserts</a></li>
+                        <li><a href="" class="cate-item">Cakes and Biscuits</a></li>
+                        <li><a href="" class="cate-item">Food recipes</a></li>
+                    </div> 
+                    <div class="advertisement">
+                        <h4>Advertisement</h4>
+                        <img src="./img_blog/g1.jpg" alt="">
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <!-- Start Footer -->
+    <footer class="footer section">
+        <div class="footer__content container">
+          <div class="footer__wrap row">
+            <div class="col-8 col-md-6 col-lg-4">
+              <div class="footer__detail">
+                <h3 class="text-white">Diner</h3>
+                <p>
+                  Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                  ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+                  amet Semper at elit.
+                </p>
+                <div class="footer__detail--social">
+                  <div class="footer__link--social">
+                    <i class="fab fa-facebook-f"></i>
+                  </div>
+                  <div class="footer__link--social">
+                    <i class="fab fa-twitter"></i>
+                  </div>
+                  <div class="footer__link--social">
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                  <div class="footer__link--social">
+                    <i class="fab fa-linkedin-in"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-md-6 col-lg-2">
+              <div class="footer__detail--link">
+                <h3>Usefull Links</h3>
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Blog posts</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-4 col-md-6 col-lg-2">
+              <div class="footer__detail--link">
+                <h3>More Info</h3>
+                <ul>
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Vision & Values</a></li>
+                  <li><a href="#">Awards</a></li>
+                  <li><a href="#">Media</a></li>
+                  <li><a href="#">Support</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-8 col-md-6 col-lg-4">
+              <div class="footer__detail--subcribe">
+                <h3>Subcribe to our Newsletter</h3>
+                <p>
+                  Enter your email and receive the latest news, updates and
+                  special offers from us.
+                </p>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name=""
+                    id=""
+                    aria-describedby="helpId"
+                    placeholder="Your Email Address"
+                  />
+                </div>
+                <button type="submit" class="btn btn-success">
+                  Subcribe Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__left">
+              <p>
+                &copy; 2021 Diner. All rights reserved. Design by
+                <span>W3Layouts</span>
+              </p>
+            </div>
+            <div class="footer__right">
+              <span>Careers</span>
+              <span>Privacy Policy</span>
+              <span>Contact us</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+       <!-- BACK TO TOP  -->
+    <a id="button"> ⤴</a>
+
+    
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+  </script>
+
+  <!-- -J query -->
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+
+  <script src="./js/backToTop/backToTop.js"></script>
+  <script src="./js/darktheme/darktheme.js"></script>
+</body>
+
+</html>

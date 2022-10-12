@@ -1,0 +1,101 @@
+.order {
+  .order__top {
+    background: url("../img/banner2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding: 5em;
+    position: relative;
+    @media screen and (max-width: 640px) {
+      padding: 3em;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      background: rgb(0 7 10 / 66%);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .order__content {
+      position: relative;
+      text-align: center;
+      .order__title {
+        margin: 20px 0 30px 0;
+        @media screen and (max-width: 640px) {
+          margin-bottom: 10px;
+        }
+        h3 {
+          @include styleFont($fs-4, $fw-5, $color-white, 48px, 1);
+          @media screen and (max-width: 640px) {
+            text-align: left;
+            font-size: 25px;
+          }
+        }
+        p {
+          line-height: 28px;
+        }
+      }
+      .order__button {
+        padding: 10px 30px;
+        border: 2px solid #fff;
+        border-radius: $radius-1;
+        background-color: transparent;
+        margin-bottom: 1em;
+        span {
+          @include styleFont($fs-1, $fw-6, $color-white, 1, 1);
+        }
+        @media screen and (max-width: 640px) {
+          display: flex;
+          align-self: flex-end;
+
+        }
+      }
+    }
+  }
+  .order__bottom {
+    .order__bottom--img {
+      img {
+        width: 100%;
+      }
+    }
+    .order__bottom--content {
+      text-align: center;
+      .order__bottom--title {
+        margin: 30px 0;
+        @media screen and (max-width: 640px) {
+          margin-bottom: 10px;
+
+        }
+        h3 {
+          margin: 0;
+          @include styleFont(30px, $fw-7, $color-black, 48px, 1);
+        
+        }
+      }
+      .order__bottom--desc {
+        margin-bottom: 30px;
+        p {
+          line-height: 28px;
+        }
+      }
+      .order__bottom--button {
+        margin-bottom: 30px;
+        padding: 10px 30px;
+        background-color: $bg-primary;
+        border: 1px solid $color-primary;
+        border-radius: $radius-1;
+        span {
+          @include styleFont($fs-1, $fw-6, $color-white, 1, 1);
+        }
+        @media screen and (max-width: 640px) {
+          display: flex;
+          align-self: flex-end;
+
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+// color
+$color-white: #fff;
+$color-primary: #ff6600;
+$color-black: #000;
+$color-gray: rgb(121, 119, 119);
+$color-light-gray: #a5a2a1;
+$color-secondary-primary: rgb(255, 198, 0);
+// font size
+$fs-1: 16px;
+$fs-2: 63px;
+$fs-3: 20px;
+$fs-4: 38px;
+$fs-5: 18px;
+$fs-6: 25px;
+$fs-7: 48px;
+
+// font weight
+$fw-3: 300;
+$fw-4: 400;
+$fw-5: 500;
+$fw-6: 600;
+
+$fw-7: 700;
+
+// padding
+$px-1: 15px;
+$py-1: 45px;
+
+//radius
+$radius-1: 5px;
+$radius-2: 10px;
+
+// bg-color
+$bg-light: rgba(130, 115, 252, 0.05);
+$bg-primary: #ff6600;
+$bg-white: #fff;
+$bg-dark: #232220;
+$bg-light-dark:#282828;
+
+// screen
+$breakpoints: (
+  "extra-large": 1199px,
+  "large": 991px,
+  "medium": 768px,
+  "small": 576px,
+);
+
+// theme

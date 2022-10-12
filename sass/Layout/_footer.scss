@@ -1,0 +1,130 @@
+.footer{
+    background-color: black;
+    color: $color-white;
+    padding-bottom: 10px;
+    .footer__content{
+        .footer__wrap{
+            h3{
+                padding-bottom: 10px;
+            }
+            .footer__detail{
+                @include responsive("large"){
+                    margin-bottom: 30px;
+                }
+
+                padding-right: 3rem;
+                h3{
+                    font-weight: $fw-7;
+                }
+                p{
+                    @include styleFont($fs-5, $fw-3, $color-light-gray, 1.4, 1);
+                    padding: 10px 0;
+                }
+                .footer__detail--social{
+                    display: flex;
+                    @include responsive("large"){
+                        justify-content: center;
+                    }
+
+                    .footer__link--social{
+                        margin-right: 20px;
+                        background-color: $bg-white;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: $radius-1;
+                        color: $color-primary;
+                        text-align: center;
+                        line-height: 40px;
+                        transition: all 0.5s;
+                        &:hover{
+                            background-color: $bg-primary;
+                            color: $color-white;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .footer__detail--link{
+                h3{
+                    @include styleFont(22px, $fw-7, $color-white, 1.4, 1);
+                }
+                a{
+                    @include styleFont($fs-1, $fw-5, $color-light-gray, 2.2, 1);
+                    transition: all 0.5s;
+                    &:hover{
+                        color: $color-primary;
+                        cursor: pointer;
+                    }
+
+                }
+            }
+            .footer__detail--subcribe{
+                h3{
+                    @include styleFont(22px, $fw-7, $color-white, 1.4, 1);
+                }
+                p{
+                    @include styleFont($fs-1, $fw-5, $color-light-gray, 1.6, 1);
+                    padding: 10px 0 5px;
+                }
+                .form-control{
+                    padding: 1rem 1rem;
+                    background-color: var(--bg);
+                    border: 1px solid transparent;
+                    &:focus{
+                        border-color: $color-primary;
+                        box-shadow: none;
+                    }
+                }
+                .btn{
+                    width: 100%;
+                    padding: 1rem;
+                    background-color: $bg-primary;
+                    border-color: $color-primary;
+                    transition: all 0.5s;
+                    &:hover{
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+        .footer__bottom{
+            padding-top: 80px;
+            display: flex;
+            justify-content: space-between;
+            @include responsive("large"){
+                flex-direction: column;
+                p{
+                    text-align: center
+                }
+            }
+
+            .footer__left{
+                p{
+                    @include styleFont($fs-5, $fw-5, $color-light-gray, 1.5, 1);
+                    span{
+                        color: $color-primary;
+                        transition: all 0.5s;
+                        &:hover{
+                            color: $color-white;
+                            cursor: pointer;
+                        }
+                    }
+                }
+               
+            }
+            .footer__right{
+               span{
+                padding-left: 30px;
+                @include styleFont($fs-5, $fw-5, $color-light-gray, 1.5, 1);
+                transition: all 0.5s;
+
+                &:hover{
+                    color: $color-primary;
+                    cursor: pointer;
+                }
+               }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,35 @@
+// import helper
+@import "../Helper/mixin";
+@import "../Helper/variable";
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.dark{
+  position: absolute;
+  top: 5px;
+  left: 0;
+  cursor: pointer;
+}
+
+.theme {
+  position: relative;
+  overflow: hidden;
+  font-size: 22px;
+  color: $color-white;
+  padding-left: 20px;
+  @include responsive("medium") {
+    margin-left: 3rem !important;
+  }
+
+}
+
+.light{
+  position: absolute;
+  top: 5px;
+  left: 0;
+  display: none;
+  cursor: pointer;
+}

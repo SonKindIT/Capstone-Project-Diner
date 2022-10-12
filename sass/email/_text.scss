@@ -1,0 +1,18 @@
+.text{
+    .text__content{
+        justify-content: space-between;
+        align-items: center;
+        .text__title{
+            @include styleFont($fs-6, $fw-5, $color-black, 35px, 1);
+            
+        }
+        .text__detail{
+            padding-left: 25px;
+            text-align: left;
+            .text__top, .text__bottom{
+                margin: 10px 0 20px 0;
+                line-height: 28px;
+            }
+        }
+    }
+}

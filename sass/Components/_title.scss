@@ -1,0 +1,10 @@
+.title{
+    text-transform: capitalize;
+    p{
+        font-family: "Pacifico";
+        @include styleFont($fs-3, $fw-4, $color-primary, 1, 1);
+    }
+    h3{
+        @include styleFont($fs-4, $fw-5, var(--color), 1, 1);
+    }
+}

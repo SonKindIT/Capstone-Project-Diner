@@ -1,0 +1,60 @@
+.header__email{
+    position: relative;
+    background: url(../img/banner1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .overlay{
+        background:  rgba(0, 7, 10, 0.50);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .container{
+        .navbar-brand{
+            @include styleFont(30px, $fw-6, $color-white, 1, 1);
+        }
+        .navbar__button--contact{
+            background-color: $color-primary;
+            padding: 10px 20px;
+            border-radius: $radius-1;
+            .button--contact{
+                @include styleFont($fs-1, $fw-6, $color-white, 1, 1);
+
+            }
+        }
+    }
+    .header__bottom{
+        position: relative;
+        padding: 3em 2em 4em;
+        .header__content{
+            h1{
+                @include styleFont(30px, $fw-6, $color-white, 42px, 1);
+            }
+            p{
+                @include styleFont($fs-1, $fw-3, $color-white, 28px, 1px);
+
+            }
+        }
+        .header__button{
+            padding-top: 1em;
+            .btn-primary{
+                padding: 10px 30px;
+                border: 2px solid $color-white;
+                .btn__content{
+                    i{
+                        color: $color-white;
+                    }
+                }
+                &:hover{
+                    background-color: transparent;
+                    .btn__content{
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+}

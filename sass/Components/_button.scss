@@ -1,0 +1,22 @@
+.btn-primary{
+    @include styleButton($radius-1, transparent, $px-1, $py-1);
+    border: 2px solid $color-white;
+    font-weight: 700;
+    font-size: $fs-1;
+    transition: all 0.5s;
+    .btn__content{
+        color: $color-white;
+        transition: all 0.5s;
+    }
+    span{
+        padding-right: 10px;
+    }
+    &:hover{
+        background-color: $color-white;
+        color: $color-primary;
+        border-color: transparent;
+        .btn__content{
+            color: $color-primary;
+        }
+    }
+}

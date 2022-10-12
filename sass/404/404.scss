@@ -1,0 +1,90 @@
+@import "../base/base.scss";
+@import "../themes/themes.scss";
+@import "../Helper/mixin";
+@import "../Helper/variable";
+@import "../Base_copy/reset";
+@import "../Layout/backToTop";
+@import "../Layout/footer";
+@import "../Layout/sidebar";
+@import "../Layout/headerSub";
+@import "../Theme/darktheme";
+@import "../Components/button";
+@import "../Components/title";
+
+.message {
+  background: var(--bg);
+  .message__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    .message__image {
+      h1 {
+        @include styleFont(130px, $fw-7, var(--color), 1, -10px);
+      }
+      i {
+        font-size: 110px;
+      }
+    }
+    .message__error {
+      h3 {
+        @include styleFont(30px, $fw-5, var(--color), 1, 1);
+        margin: 10px 0;
+      }
+      p {
+        @include styleFont($fs-3, $fw-3, var(--color), 28px, 1);
+        margin: 1.5rem 0 2.5rem;
+      }
+    }
+    .message__form {
+      form {
+        max-width: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .form-control {
+          height: 55px;
+          padding: 12px 100px 12px 25px;
+          background: var(--bg);
+          border-radius:$radius-1;
+          display: block;
+          font-weight: $fw-5;
+          font-size: $fs-5;
+
+          &:focus{
+            outline: none;
+            box-shadow: none;
+            border-color: $color-primary;
+          }
+        }
+      }
+      .btn-primary{
+        background-color: $bg-primary;
+        padding: 0 30px;
+        height: 58px;
+        border-radius: $radius-1;
+        border: 1px solid transparent;
+        &:hover{
+            opacity: 0.8;
+        }
+        .btn__content{
+            @include styleFont($fs-5, $fw-6, $color-white, 1, 1);
+
+        }
+      }
+    }
+    .message__back {
+        margin-top: 3rem;
+        a{
+            @include styleFont($fs-5, $fw-6, var(--color), 1, 1);
+            transition: all 0.5s ;
+          &:hover{
+            color: $color-primary;
+          }
+        }
+    }
+  }
+}
