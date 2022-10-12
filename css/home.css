@@ -1041,7 +1041,7 @@ input[type=checkbox] {
 .comments .comments__content .comments__carousel .comments__carousel--detail .comments__bottom p {
   font-size: 18px;
   font-weight: 300;
-  color: var(--color-light-gray);
+  color: var(--color-light-gray2);
   line-height: 1.5;
   letter-spacing: 1.2;
 }

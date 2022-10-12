@@ -859,7 +859,7 @@ html.transition *:after {
 .comments .comments__content .comments__carousel .comments__carousel--detail .comments__detail p {
   font-size: 18px;
   font-weight: 300;
-  color: var(--color-light-gray);
+  color: var(--color-light-gray2);
   line-height: 1.5;
   letter-spacing: 1;
   padding: 10px 0;

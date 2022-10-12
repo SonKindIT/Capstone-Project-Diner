@@ -611,6 +611,9 @@ input[type=checkbox] {
   color: var(--color) !important;
   padding: 32px;
 }
+.display .display-content .code .layout input, .display .badges-content .code .layout input, .badges .display-content .code .layout input, .badges .badges-content .code .layout input, .tables .display-content .code .layout input, .tables .badges-content .code .layout input, .forms .display-content .code .layout input, .forms .badges-content .code .layout input {
+  color: var(--color) !important;
+}
 .display .display-content .code .layout th, .display .display-content .code .layout td, .display .badges-content .code .layout th, .display .badges-content .code .layout td, .badges .display-content .code .layout th, .badges .display-content .code .layout td, .badges .badges-content .code .layout th, .badges .badges-content .code .layout td, .tables .display-content .code .layout th, .tables .display-content .code .layout td, .tables .badges-content .code .layout th, .tables .badges-content .code .layout td, .forms .display-content .code .layout th, .forms .display-content .code .layout td, .forms .badges-content .code .layout th, .forms .badges-content .code .layout td {
   color: var(--color) !important;
 }

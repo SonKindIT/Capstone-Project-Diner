@@ -116,6 +116,9 @@
             margin: 16px 0px;
             .layout{
                 color: var(--color) !important;
+                input{
+                    color: var(--color) !important;
+                }
                 padding: 32px;
                 th,td{
                     color: var(--color) !important;
