@@ -207,10 +207,12 @@
             border: solid 2px var(--color-light-gray);
             margin: 16px 0px;
             .layout{
-                color: var(--color) !important;
                 padding: 32px;
                 th,td{
                     color: var(--color) !important;
+                }
+                .form-control-plaintext{
+                    color: var(--color-light-gray2) !important;
                 }
             }
             .content{

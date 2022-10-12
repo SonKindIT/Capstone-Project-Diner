@@ -681,11 +681,13 @@ input[type=checkbox] {
   margin: 16px 0px;
 }
 .buttons .button-content .code .layout, .striped .button-content .code .layout, .live .button-content .code .layout, .vertically .button-content .code .layout, .readonly .button-content .code .layout {
-  color: var(--color) !important;
   padding: 32px;
 }
 .buttons .button-content .code .layout th, .buttons .button-content .code .layout td, .striped .button-content .code .layout th, .striped .button-content .code .layout td, .live .button-content .code .layout th, .live .button-content .code .layout td, .vertically .button-content .code .layout th, .vertically .button-content .code .layout td, .readonly .button-content .code .layout th, .readonly .button-content .code .layout td {
   color: var(--color) !important;
+}
+.buttons .button-content .code .layout .form-control-plaintext, .striped .button-content .code .layout .form-control-plaintext, .live .button-content .code .layout .form-control-plaintext, .vertically .button-content .code .layout .form-control-plaintext, .readonly .button-content .code .layout .form-control-plaintext {
+  color: var(--color-light-gray2) !important;
 }
 .buttons .button-content .code .content, .striped .button-content .code .content, .live .button-content .code .content, .vertically .button-content .code .content, .readonly .button-content .code .content {
   background-color: var(--bg-gray);
@@ -694,6 +696,10 @@ input[type=checkbox] {
 }
 .buttons .button-content .code .content code, .striped .button-content .code .content code, .live .button-content .code .content code, .vertically .button-content .code .content code, .readonly .button-content .code .content code {
   color: var(--color) !important;
+}
+
+.staticEmail {
+  color: var(--color);
 }
 
 .flex-pro, .flex-dir, .list {
