@@ -1,7 +1,7 @@
 .video {
+
   position: relative;
-  margin-top: 10rem;
-  background-color: var(--bg);
+  margin-top: 12rem;
   @include responsive("large"){
     margin-top: 15rem;
   }
@@ -10,7 +10,7 @@
   }
 
   .video__content {
-    background: url("../img_landing_page/banner3.jpg") no-repeat center;
+    background: url("../img/banner3.jpg") no-repeat center;
     min-height: 600px;
     background-size: cover;
     position: relative;
@@ -33,7 +33,7 @@
         text-align: center;
         line-height: 76px;
         border-radius: 50%;
-        background-color: $bg-white;
+        background-color: #fff;
         display: inline-block;
         animation: boxShadow 1s linear infinite;
         transition: all 0.5s;
@@ -42,7 +42,6 @@
             margin: 0;
             color: $color-primary;
             transition: all 0.5s;
-            background-color: #fff;
           }
         }
       }

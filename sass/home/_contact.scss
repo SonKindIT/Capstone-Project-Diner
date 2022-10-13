@@ -3,7 +3,7 @@
     .contact__title {
       position: relative;
       .contact__info {
-        background: url("../img_index/banner2.jpg") no-repeat center;
+        background: url("../img/banner2.jpg") no-repeat center;
         background-size: cover;
         text-align: center;
         padding: 8rem 0;
@@ -54,8 +54,6 @@
       }
 
       .contact__card {
-        background-color: var(--bg);
-
         position: absolute;
         bottom: -40%;
         z-index: 1;
@@ -110,7 +108,7 @@
             padding: 15px 0;
           }
           p{
-            @include styleFont($fs-5, $fw-5, var(--color-light-gray2), 1, 1);
+            @include styleFont($fs-5, $fw-5, var(--color-light-gray), 1, 1);
           }
           &:hover{
             transform: translateY(-0.25rem);

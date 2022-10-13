@@ -23,6 +23,10 @@ section {
   font-family: Quicksand, sans-serif;
 }
 
+body {
+  background-color: var(--bg);
+}
+
 .section {
   padding: 100px 0;
 }
@@ -81,24 +85,21 @@ a {
 html {
   background: rgba(130, 115, 252, 0.05);
   --bg: #fff;
-  --bg-gray:#f7f7f7;
   --color: #000;
   --bg-light: #fff;
-  --color-light-gray2:rgba(27,27,45,0.7);
-  --color-light-gray: rgba(247,247,247);
-  --border-color: rgb(238, 238, 238);
+  --color-light-gray: rgb(121, 119, 119);
+  --border-color: rgb(238, 238, 238) ;
 }
 html iframe {
   filter: grayscale(0%);
 }
 
 html[data-theme=dark] {
+  background: #232220;
   --bg: #232220;
-  --bg-gray:#282828;
   --color: #fff;
   --bg-light:#282828;
-  --color-light-gray2:#fff;
-  --color-light-gray:rgba(255,255,255,0.03);
+  --color-light-gray:#fff;
   --border-color: #59595c;
 }
 html[data-theme=dark] iframe {
@@ -696,10 +697,6 @@ input[type=checkbox] {
 }
 .buttons .button-content .code .content code, .striped .button-content .code .content code, .live .button-content .code .content code, .vertically .button-content .code .content code, .readonly .button-content .code .content code {
   color: var(--color) !important;
-}
-
-.staticEmail {
-  color: var(--color);
 }
 
 .flex-pro, .flex-dir, .list {

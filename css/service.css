@@ -23,6 +23,10 @@ section {
   font-family: Quicksand, sans-serif;
 }
 
+body {
+  background-color: var(--bg);
+}
+
 .section {
   padding: 100px 0;
 }
@@ -81,24 +85,21 @@ a {
 html {
   background: rgba(130, 115, 252, 0.05);
   --bg: #fff;
-  --bg-gray:#f7f7f7;
   --color: #000;
   --bg-light: #fff;
-  --color-light-gray2:rgba(27,27,45,0.7);
-  --color-light-gray: rgba(247,247,247);
-  --border-color: rgb(238, 238, 238);
+  --color-light-gray: rgb(121, 119, 119);
+  --border-color: rgb(238, 238, 238) ;
 }
 html iframe {
   filter: grayscale(0%);
 }
 
 html[data-theme=dark] {
+  background: #232220;
   --bg: #232220;
-  --bg-gray:#282828;
   --color: #fff;
   --bg-light:#282828;
-  --color-light-gray2:#fff;
-  --color-light-gray:rgba(255,255,255,0.03);
+  --color-light-gray:#fff;
   --border-color: #59595c;
 }
 html[data-theme=dark] iframe {
@@ -790,7 +791,7 @@ input[type=checkbox] {
   position: relative;
 }
 .contact .contact__content .contact__title .contact__info {
-  background: url("../img_index/banner2.jpg") no-repeat center;
+  background: url("../img/banner2.jpg") no-repeat center;
   background-size: cover;
   text-align: center;
   padding: 8rem 0;
@@ -846,7 +847,6 @@ input[type=checkbox] {
   z-index: -1;
 }
 .contact .contact__content .contact__title .contact__card {
-  background-color: var(--bg);
   position: absolute;
   bottom: -40%;
   z-index: 1;
@@ -920,7 +920,7 @@ input[type=checkbox] {
 .contact .contact__content .contact__title .contact__card .contact__card--detail p {
   font-size: 18px;
   font-weight: 500;
-  color: var(--color-light-gray2);
+  color: var(--color-light-gray);
   line-height: 1;
   letter-spacing: 1;
 }
